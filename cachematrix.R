@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
         ## Sets matrix value and resets inverse cached value to NULL.
         set <- function(y) {
-                x <- y
+                x <<- y
                 inverse <<- NULL
         }
         
